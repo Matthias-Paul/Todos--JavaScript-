@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+body{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 30px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  h1{
+display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  
+  }
+  #input{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+  }
+  #todo{
+    padding: 6px;
+    outline: none;
+    border-radius: 8px;
+    border-color: blue;
+    margin-right: 5px;
+    font-size: 15px
+    
+  }
+  #btn{
+    padding: 6px;
+    border: none;
+    width: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: blue;
+    color:white;
+    cursor: pointer;
+    
+  }
+    #list{
+      display: grid;
+      grid-template-columns: 230px 70px;
+      row-gap: 10px;
+      margin-top: 10px;
+      margin-left: 13px;
+      overflow-wrap: break-word;
+      align-items: center ;
+    }
+    .del{
+      padding: 8px;
+      background-color: red;
+      color:white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      
+    }
+    .del:active{
+      opacity :0.8;
+    }
+    #btn:active{
+      opacity :0.8;
+    }
+  </style>
+</head>
+
+<body>
+<h1> My Todo list </h1>
+<div id="input">
+  
+
+<input id="todo" placeholder="Enter todo" type="text">
+<button id="btn">Add</button>
+</div>
+<div id="list"></div>
+
+<script src="TodoList.js"></script>
+</body>
+
+</html>
